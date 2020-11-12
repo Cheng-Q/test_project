@@ -3,7 +3,18 @@
   "version": "1.0.0",
   "description": "regulation 分支 测试 git commit 提交规范",
   "main": "index.js",
-
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "lint-staged": {
+    "*.{js,vue}": [
+      "eslint --fix",
+      "git add"
+    ]
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -18,6 +29,13 @@
   },
   "homepage": "https://github.com/Cheng-Q/test_project#readme",
   "devDependencies": {
-
+    "@commitlint/cli": "^11.0.0",
+    "@commitlint/config-conventional": "^11.0.0",
+    "@vue/cli-plugin-eslint": "^4.5.8",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.13.0",
+    "eslint-plugin-vue": "^7.1.0",
+    "husky": "^4.3.0",
+    "lint-staged": "^10.5.1"
   }
 }
