@@ -9,12 +9,12 @@ export const isWeixin = () => {
 export const queryInfoObj = () => {
   let str
   if (process.browser) {
-    str = location.href
+    str = location.href 
   }
-  const newStr = str.split('?').slice(1)
-  const obj = {}
-  const newObj = {}
-  function test (value) {
+  const newStr = str.split('?').slice(1) 
+  const obj = {} 
+  const newObj = {} 
+  function test (value) { 
     if (Array.isArray(value)) {
       value.forEach((item) => {
         if (item.includes('&')) {

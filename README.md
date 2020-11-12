@@ -9,3 +9,5 @@ regulation 分支
 "git add"
 ]
 },
+
+# "src/**/*.{css,scss}": ["stylelint --config src/stylelint.config.json"]
