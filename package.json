@@ -3,6 +3,11 @@
   "version": "1.0.0",
   "description": "regulation 分支 测试 git commit 提交规范",
   "main": "index.js",
+   "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged",
@@ -16,7 +21,9 @@
     ]
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "precommit": "eslint --fix",
+    "commit": "git-cz"
   },
   "repository": {
     "type": "git",
@@ -33,6 +40,8 @@
     "@commitlint/config-conventional": "^11.0.0",
     "@vue/cli-plugin-eslint": "^4.5.8",
     "babel-eslint": "^10.1.0",
+    "commitizen": "^4.2.2",
+    "cz-conventional-changelog": "^3.3.0",
     "eslint": "^7.13.0",
     "eslint-plugin-vue": "^7.1.0",
     "husky": "^4.3.0",
