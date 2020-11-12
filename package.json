@@ -14,6 +14,7 @@
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
   },
+
   "lint-staged": {
     "*.{js,vue}": [
       "eslint --fix",
@@ -22,7 +23,7 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "precommit": "eslint --fix",
+    "precommit": "lint-staged",
     "commit": "git-cz"
   },
   "repository": {
