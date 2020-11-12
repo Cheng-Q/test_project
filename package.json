@@ -17,9 +17,12 @@
 
   "lint-staged": {
     "*.{js,vue}": [
-      "eslint --fix",
+      "eslint --fix --ext .js",
+      "prettier --write",
       "git add"
-    ]
+    ],
+    "src/**/*.{css,scss}": ["stylelint --config src/stylelint.config.json"]
+
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
