@@ -1,0 +1,23 @@
+{
+  "name": "test_project",
+  "version": "1.0.0",
+  "description": "regulation 分支 测试 git commit 提交规范",
+  "main": "index.js",
+
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Cheng-Q/test_project.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Cheng-Q/test_project/issues"
+  },
+  "homepage": "https://github.com/Cheng-Q/test_project#readme",
+  "devDependencies": {
+
+  }
+}

@@ -1,3 +1,4 @@
 # test_project
 
-各种测试项目使用仓库
+regulation 分支
+测试 git commit 提交规范
