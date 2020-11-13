@@ -24,7 +24,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "precommit": "lint-staged",
-    "commit": "git-cz"
+    "commit": "git-cz",
+    "dev": "node server.js"
   },
   "repository": {
     "type": "git",
@@ -46,6 +47,9 @@
     "eslint": "^7.13.0",
     "eslint-plugin-vue": "^7.1.0",
     "husky": "^4.3.0",
-    "lint-staged": "^10.5.1"
+    "lint-staged": "^10.5.1",
+    "cheerio": "^1.0.0-rc.3",
+    "express": "^4.17.1",
+    "body-parser": "^1.19.0"
   }
 }
