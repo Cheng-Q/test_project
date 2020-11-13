@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "regulation 分支 测试 git commit 提交规范",
   "main": "index.js",
-   "config": {
+  "config": {
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
@@ -14,7 +14,6 @@
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
   },
-
   "lint-staged": {
     "*.{js,vue}": [
       "eslint --fix",
@@ -42,14 +41,15 @@
     "@commitlint/config-conventional": "^11.0.0",
     "@vue/cli-plugin-eslint": "^4.5.8",
     "babel-eslint": "^10.1.0",
+    "body-parser": "^1.19.0",
+    "cheerio": "^1.0.0-rc.3",
     "commitizen": "^4.2.2",
     "cz-conventional-changelog": "^3.3.0",
     "eslint": "^7.13.0",
     "eslint-plugin-vue": "^7.1.0",
-    "husky": "^4.3.0",
-    "lint-staged": "^10.5.1",
-    "cheerio": "^1.0.0-rc.3",
     "express": "^4.17.1",
-    "body-parser": "^1.19.0"
+    "graphql": "^15.4.0",
+    "husky": "^4.3.0",
+    "lint-staged": "^10.5.1"
   }
 }
