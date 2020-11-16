@@ -30,7 +30,7 @@ app.all("/pa", (req, res) => {
 });
 app.get("/api", (req, res) => {
   console.log("刷新了");
-  let file = path.join(__dirname, "/tarbar.json");
+  let file = path.join(__dirname, "./tarbar.json");
   fs.readFile(file, "utf-8", (err, data) => {
     if (err) {
       res.send("读取文件失败");
