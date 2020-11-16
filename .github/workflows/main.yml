@@ -1,4 +1,4 @@
-name: Publish And Deploy Demo
+name: nodeCi
 on:
   push:
     tags:
@@ -55,8 +55,8 @@ jobs:
         script: |
           pwd
           # . ~/.bashrc
-          export PATH=/root/.nvm/versions/node/v15.1.0/bin:$PATH
-          cd /root/realworld-nuxtjs
+          export PATH=/root/.nvm/versions/node/v12.19.0/bin:$PATH
+          cd /home/www
           wget https://github.com/no-pear/realworld-nuxtjs/releases/latest/download/release.tgz -O release.tgz
           tar zxvf release.tgz
           npm install --production
