@@ -11,7 +11,7 @@ jobs:
       - name: Install Node.js
         uses: actions/setup-node@v1
         with:
-          node-version: "10.x"
+          node-version: "12.x"
       - name: Install npm dependencies
         run: npm install
       - name: Run build task
@@ -24,4 +24,4 @@ jobs:
           SOURCE: "dist/"
           REMOTE_HOST: "47.100.116.155"
           REMOTE_USER: "root"
-          TARGET: "/home/www/"
+          TARGET: "../home/www/"
