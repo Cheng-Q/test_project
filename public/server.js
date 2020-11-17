@@ -1,9 +1,7 @@
 const express = require("express");
 const fs = require("fs");
 const bodyParser = require("body-parser");
-
 // 爬取列表数据
-
 const https = require("https");
 const cheerio = require("cheerio");
 const path = require("path");
